@@ -15,7 +15,7 @@ app.get('/', (req, res, next) => {
 });
 
 app.get('/users', (req, res, next) => {
-  res.render('users', { pageTitle: 'Users', users: users, hasUsers: 'users.length > 0' });
+  res.render('users', { pageTitle: 'Users', users: users });
 });
 
 app.post('/add-user', (req, res, next) => {
